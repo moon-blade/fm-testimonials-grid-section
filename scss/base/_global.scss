@@ -1,0 +1,66 @@
+body {
+  background-color: $lightGrayishBlue;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 0.8125rem;
+}
+.content-wrapper {
+  padding: 4.375rem 1.625rem;
+}
+
+@include for-tablet-portrait-up {
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "daniel daniel"
+      "jeanette patrick"
+      "jonathan patrick"
+      "kira kira";
+    gap: 1rem;
+
+    .cardDaniel {
+      grid-area: daniel;
+    }
+    .cardJonathan {
+      grid-area: jonathan;
+    }
+    .cardJeanette {
+      grid-area: jeanette;
+    }
+    .cardPatrick {
+      grid-area: patrick;
+    }
+    .cardKira {
+      grid-area: kira;
+    }
+    .card {
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@include for-tablet-landscape-up {
+  .content-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "daniel daniel jonathan"
+      "jeanette patrick patrick"
+      "kira kira kira";
+  }
+}
+
+@include for-desktop-up {
+  .content-wrapper {
+    padding: 5.125rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "daniel daniel jonathan kira"
+      "jeanette patrick patrick kira";
+  }
+  gap: 1.5rem;
+}

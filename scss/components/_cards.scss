@@ -1,0 +1,147 @@
+.card {
+  border-radius: 0.3125rem;
+  padding: 1.625rem 2.125rem 2.125rem 2.125rem;
+  &:not(:last-child) {
+    margin-bottom: 1.625rem;
+  }
+  &__header {
+    display: flex;
+    margin-bottom: 1.5rem;
+  }
+  &__image {
+    margin-right: 1rem;
+    img {
+      border-radius: 50%;
+      max-width: 1.875rem;
+    }
+  }
+  .name-status {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__name {
+    font-size: 0.625rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  &__status {
+    font-size: 0.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  &__heading {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  &__quote {
+    font-size: 0.875rem;
+  }
+}
+
+.cardDaniel {
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right (1.375rem);
+  @include for-tablet-landscape-up {
+    background-position: top right (5rem);
+  }
+  background-color: $moderateViolet;
+
+  .card__name {
+    color: $white;
+  }
+
+  .card__status {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .card__heading {
+    color: $lightGrayishBlue;
+  }
+
+  .card__quote {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.cardJonathan {
+  background-color: $veryDarkGrayishBlue;
+
+  .card__name {
+    color: $white;
+  }
+
+  .card__status {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .card__heading {
+    color: $lightGrayishBlue;
+  }
+
+  .card__quote {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.cardJeanette {
+  background-color: $white;
+
+  .card__name {
+    color: rgba(25, 33, 46, 1);
+  }
+
+  .card__status {
+    color: rgba(25, 33, 46, 0.5);
+  }
+
+  .card__heading {
+    color: rgba(25, 33, 46, 1);
+  }
+
+  .card__quote {
+    color: rgba(25, 33, 46, 0.7);
+  }
+}
+
+.cardPatrick {
+  background-color: $veryDarkBlackishBlue;
+
+  .card__name {
+    color: $white;
+  }
+
+  .card__status {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .card__heading {
+    color: $lightGrayishBlue;
+  }
+
+  .card__quote {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.cardKira {
+  background-color: $white;
+
+  .card__name {
+    color: rgba(25, 33, 46, 1);
+  }
+
+  .card__status {
+    color: rgba(25, 33, 46, 0.5);
+  }
+
+  .card__heading {
+    color: rgba(25, 33, 46, 1);
+  }
+
+  .card__quote {
+    color: rgba(25, 33, 46, 0.7);
+  }
+}
